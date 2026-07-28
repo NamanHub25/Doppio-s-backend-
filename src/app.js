@@ -18,7 +18,4 @@ app.use('/api/v1/users', userRoute)
 app.use('/api/v1/messages', messageRoute)
 
 
-
-
-
 module.exports = app; // This ensures that we are making app.js available for other files 

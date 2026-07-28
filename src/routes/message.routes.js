@@ -1,14 +1,9 @@
-const express = require('express')
+const express = require('express');
+const messages = require('../controllers/message.controllers');
+const sendmessages = require('../controllers/message.controllers');
 
 const route = express.Router();
 
-route.post('/send', (req, res) => {
-    console.log(req.body);
-
-    res.json({
-        success: "true",
-        message: "Message sent successfully!!!"
-    });
-});
+route.post("/send", sendmessages)
 
 module.exports = route;
