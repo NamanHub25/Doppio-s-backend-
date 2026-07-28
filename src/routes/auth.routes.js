@@ -1,9 +1,17 @@
-/*const express = require('express')
+// SignUp and Login APIs would belong to auhentication not the APIs ofmessage and profile
 
-const router = express.Router();
+const express = require('express');
 
-router.post("/signup", (req, res) => {
-    res.send("Signup route is working!!!")
+const route = express.Router();
+
+// Signup API 
+route.post("/signup", (req,res) => {
+    res.send("SignUp successfull!!!");
 });
 
-module.exports = router; */
+//Login API
+route.post("/login", (req,res) => {
+    res.send("User logged in successfully!!!");
+});
+
+module.exports = route;
