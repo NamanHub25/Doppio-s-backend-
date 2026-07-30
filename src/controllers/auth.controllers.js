@@ -1,6 +1,7 @@
 const User = require("../models/user.models");
 const bcrypt = require("bcrypt");
 
+// SIGNUP API
 const signup = async (req, res) => {
   try {
     const { name, email, password, username } = req.body; // We destructured, instead of prinitng the entire object
@@ -46,8 +47,49 @@ const signup = async (req, res) => {
   }
 };
 
-const login = (req, res) => {
-  res.send("Login successfull!!!");
+// LOGIN API
+const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    // Validating user details
+    if (!email || !password) {
+      return res.status(400).json({
+        message: "Email and password are required",
+      });
+    }
+
+    // Checking whether the user exist or not
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({
+        message: "Invalid credentials",
+      });
+    }
+    // Comparing password
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+
+    if (!isPasswordCorrect) {
+      return res.status(400).json({
+        message: "Invalid credentials",
+      });
+    }
+
+    // Returning success
+    return res.status(200).json({
+      success: true,
+      message: "Login successful",
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    return res.status(500).json({
+
+      success: false,
+      message: "Internal server error",
+    });
+  }
 };
 
 module.exports = { signup, login };
