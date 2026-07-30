@@ -3,6 +3,7 @@
 const express = require('express'); // Importing the Express library beacuse without it node won't know what is Express
 
 const app = express(); // Here, we are creating an express application 
+
 const authRoute = require('./routes/auth.routes')
 const userRoute = require('./routes/user.routes')
 const messageRoute = require('./routes/message.routes')
