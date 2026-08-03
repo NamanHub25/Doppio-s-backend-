@@ -1,10 +1,18 @@
-const sendmessages = (req, res) => {
-    console.log(req.body);
-
+const sendMessage = (req, res) => {
     res.json({
-        success: true,
-        messgae: "Message sent successfully!!!"
+        message: "Send message API working"
     });
 };
 
-module.exports = sendmessages;
+
+const getMessages = (req, res) => {
+    res.json({
+        message: "Get messages API working"
+    });
+};
+
+
+module.exports = {
+    sendMessage,
+    getMessages
+};
