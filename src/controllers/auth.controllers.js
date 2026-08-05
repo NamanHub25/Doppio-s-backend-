@@ -1,7 +1,9 @@
 const User = require("../models/user.models");
 const bcrypt = require("bcrypt");
-const jwt = require('jsonwebtoken');
-
+const {
+  generateAccessToken,
+  generateRefreshToken,
+} = require("../utils/generateTokens");
 
 // SIGNUP API
 const signup = async (req, res) => {
@@ -77,30 +79,34 @@ const login = async (req, res) => {
       });
     }
 
-    // Creating the JWT token 
-    const token = jwt.sign(
-      {
-        userid: user._id,
-        email: user.email
-      },
-      process.env.JWT_SECRET,
-      {
-        expiresIn: "7d",
-      }
-    );
+    // Creating the JWT token
+    const accessToken = generateAccessToken(user._id);
+    const refreshToken = generateRefreshToken(user._id);
+
+    //Saving the token
+
+    user.refreshToken = refreshToken;
+    await user.save({
+      validateBeforeSave: false,
+    });
+
+    console.log("Generated Refresh Token:", refreshToken);
+
+    user.refreshToken = refreshToken;
+
+    console.log("Before Save:", user);
 
     // Returning success
     return res.status(200).json({
       success: true,
       message: "Login successful",
-      token,
+      accessToken,
+      refreshToken,
     });
-
   } catch (error) {
     console.error(error);
 
     return res.status(500).json({
-
       success: false,
       message: "Internal server error",
     });

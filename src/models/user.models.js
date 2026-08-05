@@ -8,6 +8,10 @@ const userSchema = new mongoose.Schema(
     username: String,
     bio: String,
     profilePicture: String,
+    refreshToken: {
+      type: String,
+      default: null
+    }
   },
   {
     timestamps: true, // Whenever a user signup timestamp feature of MongoDB automatically saves the date
