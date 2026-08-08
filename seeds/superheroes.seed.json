@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Peter Parker",
+    "email": "peter.parker@doppio.test",
+    "username": "spiderman",
+    "password": "Spider123!"
+  },
+  {
+    "name": "Tony Stark",
+    "email": "tony.stark@doppio.test",
+    "username": "ironman",
+    "password": "IronMan123!"
+  },
+  {
+    "name": "Steve Rogers",
+    "email": "steve.rogers@doppio.test",
+    "username": "captainamerica",
+    "password": "Shield123!"
+  },
+  {
+    "name": "Bruce Wayne",
+    "email": "bruce.wayne@doppio.test",
+    "username": "batman",
+    "password": "DarkKnight123!"
+  },
+  {
+    "name": "Clark Kent",
+    "email": "clark.kent@doppio.test",
+    "username": "superman",
+    "password": "Krypton123!"
+  },
+  {
+    "name": "Diana Prince",
+    "email": "diana.prince@doppio.test",
+    "username": "wonderwoman",
+    "password": "Amazon123!"
+  },
+  {
+    "name": "Barry Allen",
+    "email": "barry.allen@doppio.test",
+    "username": "flash",
+    "password": "SpeedForce123!"
+  },
+  {
+    "name": "Natasha Romanoff",
+    "email": "natasha.romanoff@doppio.test",
+    "username": "blackwidow",
+    "password": "Widow123!"
+  },
+  {
+    "name": "Thor Odinson",
+    "email": "thor.odinson@doppio.test",
+    "username": "thor",
+    "password": "Mjolnir123!"
+  },
+  {
+    "name": "Bruce Banner",
+    "email": "bruce.banner@doppio.test",
+    "username": "hulk",
+    "password": "Smash123!"
+  },
+  {
+    "name": "Wanda Maximoff",
+    "email": "wanda.maximoff@doppio.test",
+    "username": "scarletwitch",
+    "password": "Chaos123!"
+  },
+  {
+    "name": "Stephen Strange",
+    "email": "stephen.strange@doppio.test",
+    "username": "doctorstrange",
+    "password": "Magic123!"
+  },
+  {
+    "name": "T'Challa",
+    "email": "tchalla@doppio.test",
+    "username": "blackpanther",
+    "password": "Wakanda123!"
+  },
+  {
+    "name": "Scott Lang",
+    "email": "scott.lang@doppio.test",
+    "username": "antman",
+    "password": "Tiny123!"
+  },
+  {
+    "name": "Carol Danvers",
+    "email": "carol.danvers@doppio.test",
+    "username": "captainmarvel",
+    "password": "Cosmic123!"
+  },
+  {
+    "name": "Clark Kent Jr",
+    "email": "clark.jr@doppio.test",
+    "username": "superboy",
+    "password": "Boy123!"
+  },
+  {
+    "name": "Arthur Curry",
+    "email": "arthur.curry@doppio.test",
+    "username": "aquaman",
+    "password": "Ocean123!"
+  },
+  {
+    "name": "Hal Jordan",
+    "email": "hal.jordan@doppio.test",
+    "username": "greenlantern",
+    "password": "Lantern123!"
+  },
+  {
+    "name": "Victor Stone",
+    "email": "victor.stone@doppio.test",
+    "username": "cyborg",
+    "password": "Cyber123!"
+  },
+  {
+    "name": "Harley Quinn",
+    "email": "harley.quinn@doppio.test",
+    "username": "harleyquinn",
+    "password": "Joker123!"
+  },
+  {
+    "name": "Miles Morales",
+    "email": "miles.morales@doppio.test",
+    "username": "spidermanmiles",
+    "password": "Web123!"
+  },
+  {
+    "name": "Logan Howlett",
+    "email": "logan.howlett@doppio.test",
+    "username": "wolverine",
+    "password": "Claws123!"
+  },
+  {
+    "name": "Jean Grey",
+    "email": "jean.grey@doppio.test",
+    "username": "phoenix",
+    "password": "Phoenix123!"
+  },
+  {
+    "name": "Clark Bruce",
+    "email": "clark.bruce@doppio.test",
+    "username": "fusionhero",
+    "password": "Hero123!"
+  },
+  {
+    "name": "Dick Grayson",
+    "email": "dick.grayson@doppio.test",
+    "username": "nightwing",
+    "password": "Wing123!"
+  }
+]

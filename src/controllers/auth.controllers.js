@@ -90,12 +90,6 @@ const login = async (req, res) => {
       validateBeforeSave: false,
     });
 
-    console.log("Generated Refresh Token:", refreshToken);
-
-    user.refreshToken = refreshToken;
-
-    console.log("Before Save:", user);
-
     // Returning success
     return res.status(200).json({
       success: true,
